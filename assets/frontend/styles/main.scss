@@ -1,0 +1,342 @@
+// fonts url
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+// end fonts url
+
+// color
+$red1: #FF2946;
+$red-secondary: #ff3a54;
+$red3:  #FF7E90;    // bg header
+$black1: #343434;   // h1
+$black2: #515151;   // h2-h6
+$black3: #535353;   // paragahrap
+$black4: #686868;   // span
+$white-vanila: #ffffff;
+$white2: #F7F7F7;   // bg-section-latest
+$white3: #f0f0f0;   // bg footer 
+// end color
+
+// font
+$h-font: 'Source Serif Pro', serif;
+$p-font: 'Roboto', sans-serif;
+// end font
+
+// general
+body{
+	font-family: $p-font;
+	background-color: $white2;
+}
+
+h1{ // only header landing page
+	font-size: 52px;
+	font-family: $h-font;
+	font-weight: 600;
+	color: $black1;
+}
+
+h2{ // title artikel
+	font-size: 38px;
+	font-family: $h-font;
+	font-weight: 600;
+	color: $black1;
+}
+
+h3{ // title section
+	font-size: 32px;
+	font-family: $h-font;
+	font-weight: 400;
+	color: $black2;
+}
+
+h4{ // title sidebar articelpage
+	font-size: 26px;
+	font-family: $h-font;
+	font-weight: 400;
+	color: $black2;
+}
+
+h5{ // title footer item
+	font-size: 20px;
+	font-family: $p-font;
+	font-weight: 400;
+	color: $black2;
+}
+
+h6{ // card title
+	font-size: 16px;
+	font-family: $h-font;
+	font-weight: 400;
+	color: $black2;
+}
+
+.h6-sub{ 
+	font-size: 16px;
+	font-family: $p-font;
+	font-weight: 400;
+	color: $black3;
+}
+
+p{ // paraghrap
+	font-size: 18px;
+	line-height: 32px;
+	font-family: $p-font;
+	font-weight: 300;
+	color: $black3; 
+}
+
+.p-sub{ // text under section title, name author
+	font-size: 18px;
+	font-family: $p-font;
+	font-weight: 400;
+	color: $black3; 
+}
+
+.p-sub-secondary{ // text label form input
+	font-size: 16px;
+	font-family: $p-font;
+	font-weight: 400;
+	color: $black4; 
+}
+
+small{ // date artikel, categori
+	font-size: 14px;
+	font-family: $p-font;
+	font-weight: 400;
+	color: $black4; 
+}
+
+form{
+	.form-control{
+		border: solid 1px 0 1px 1px $red1;
+		border-color: $red1;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.ic-search{
+		background-color: $red1;
+		border-color: $red1;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
+
+.form-control:focus , 
+button[type="submit"]:focus ,
+button[type="button"]:focus,
+.pagination .page-item .page-link:focus {
+	outline: 0;
+	box-shadow: 0 0 0 4px rgba(255, 126, 144, 0.5);
+}
+
+.text-spacing{ // set spacing word
+	letter-spacing: 0.5px;
+}
+
+.btn-red-primary{ // button home page
+	margin-top: 55px;
+	color: $red1;
+	background-color: $white-vanila;
+	border: solid 1px $red1;
+	border-radius: 20px;
+	transition:  .2s ease-in-out;
+
+	&:hover{
+		color: $white-vanila;
+		background-color: $red1;
+	}
+}
+
+.btn-newsletter{ // button newsletter
+	background-color: $red1;
+	color: $white-vanila;
+	
+	&:hover{
+		background-color: $red-secondary;
+		color: $white-vanila; 
+	}
+}
+
+.card-articel{  // card articel home page
+	width: 360px;
+	padding: 20px;
+	border-radius: 10px;
+
+	.card-title{
+		display: block;/* or inline-block */
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		overflow: hidden;
+		height: 38px;
+	}
+}
+// end general
+
+
+
+
+// ------ home page ------
+// navigasi 
+.nav-link {
+		font-size: 18px;
+		font-weight: 400;
+		color: $black1;
+		margin-right: 35px; 
+
+		&:hover {
+			font-size: 18px;
+			font-weight: 500;
+			color: $black1;
+		}
+}
+// end navigasi
+
+// header
+header{
+	background-color: $white-vanila;
+	
+	.container-header{
+		padding: 100px 0;
+	}
+
+}
+// end header
+
+// main
+.section-articel-popular, .section-articel-latest{
+	padding: 100px 0px;
+	background-color: $white2;
+
+	.row{
+		margin: 50px 0;
+	}
+
+	a{
+		color: $red1;
+		text-decoration: none;
+
+		&:hover{
+				color: $red-secondary;
+				text-decoration: underline;
+		}
+	}
+}
+
+.section-articel-latest{
+	background-color: $white-vanila;
+}
+
+.section-newsletter{
+	margin: 200px 0 150px;
+	margin-bottom: 100px;
+	
+	.container{
+		padding: 30px;
+		background-color: $red1;
+		border-radius: 20px;
+	}
+}
+// end main
+
+// footer
+footer{
+	padding-top: 100px;
+	background-color: $white3;
+	word-wrap: break-word;
+}
+// end footer
+// ------ end home page ------
+
+
+
+
+// ------ articel page ------
+// main
+.card-articel-content{
+	margin: 150px 0 100px;
+	padding: 30px;
+	border-radius: 10px;
+
+	.category-articel{
+		margin-bottom: 25px;
+
+		.img-ic-tag{
+				height: 14px;
+				margin-top: -7px;
+		}
+		a{
+				color: $black4;
+		}
+	}
+
+	.data-author{
+		margin-bottom: 40px;
+
+		.img-author{
+				width: 40px;
+		}
+	}
+	
+	.text-center{
+		margin-bottom: 40px;
+		a{
+				color: $black4;
+		}
+	}
+}
+
+.card-margin{ // ghost card
+	margin-top: 660px;
+}
+
+.card-articel-sidebar{
+	padding: 30px;
+	border-radius: 10px;
+
+	
+	.hr-title{
+		height: 4px;
+		color: $red1;
+	}
+
+
+	.img-card-sidebar{
+		width: 40px;
+		height: 40px;
+	}
+	small{
+		margin-left: 56px;
+	}
+}
+// end main
+// ------ end articel page ------
+
+
+
+
+
+// ---------- articel page all ----------
+.container-all-page{
+	margin-top: 62px;
+	padding: 120px 0 150px;
+	background-color: $red3;
+}
+
+.section-all-articel{
+	padding: 0px 0px 100px;
+	margin-top: -80px;
+	.row{
+		margin-bottom: 50px;
+	}
+}
+// ---------- Endarticel page all ----------
+
+
+// ---------- author page ----------
+.container-profile{
+	padding: 50px 100px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+
+	.img-author{
+		width: 240px;
+	}
+}
